@@ -16,6 +16,16 @@ expo-env.d.ts
 *.p12
 *.key
 *.mobileprovision
+*.xcodeproj
+*.xcworkspace
+*.pbxproj
+ios/Pods/
+ios/build/
+android/app/build/
+android/.gradle
+android/build/
+android/local.properties
+android/captures/
 
 # Metro
 .metro-health-check*
@@ -24,6 +34,7 @@ expo-env.d.ts
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+logs/
 
 # macOS
 .DS_Store
@@ -31,6 +42,15 @@ yarn-error.*
 
 # local env files
 .env*.local
+.env
 
 # typescript
 *.tsbuildinfo
+
+# testing
+coverage/
+
+# IDE
+.idea/
+.vscode/
+
