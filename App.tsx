@@ -8,6 +8,7 @@ import HomeScreen from "./app/screen/HomeScreen";
 import ProfileScreen from "./app/screen/ProfileScreen";
 import SearchScreen from "./app/screen/SearchScreen";
 import SettingsScreen from "./app/screen/SettingsScreen";
+import ArticleDetail from "./app/screen/ArticleDetail";
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -78,6 +79,11 @@ const HomeNavigator = () => {
         component={TabNavigator}
         options={{ headerShown: false }}
       />
+      <Stack.Screen
+        name="ArticleDetails"
+        component={ArticleDetail}
+        options={{ title: "" }}
+      />
     </Stack.Navigator>
   );
 };
@@ -94,11 +100,9 @@ export default function App() {
             drawerStyle: {
               width: 300,
               backgroundColor: "#fff",
-              marginTop: 5,
-              marginLeft: 5,
-              marginBottom: 5,
-              marginRight: 5,
-              borderRadius: 20,
+
+              borderTopRightRadius: 20,
+              borderBottomRightRadius: 20,
             },
           }}
         >
